@@ -8,7 +8,7 @@ import {
 import { sql } from "./db/connection.ts";
 import { env } from "./env.ts";
 
-const app = fastify().withTypeProvider<ZodTypeProvider>();
+const app = fastify().withTypeProvider<ZodTypeProvider>(); 
 
 app.register(fastifyCors, {
 	origin: "http://localhost:5173",

@@ -1,5 +1,5 @@
 import postgres from "postgres";
-import { env } from "../env.ts"; // ✅ CORRETO: o env.ts está em src/
+import { env } from "../env.ts"; 
 
 export const sql = postgres(env.DATABASE_URL, { prepare: true });
 
